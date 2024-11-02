@@ -79,7 +79,7 @@
     # ".config/nvim".source = "${builtins.getEnv "HOME"}/dotfiles/nvim";
     ".zshrc".source = ~/dotfiles/zshrc/.zshrc;
     ".vimrc".source = ~/dotfiles/vimrc/.vimrc;
-    ".gitconfig".source = ~/dotfiles/.gitconfig;
+    # ".gitconfig".source = ~/dotfiles/.gitconfig;
     ".config/nvim".source = ~/dotfiles/nvim;
     ".config/kitty".source = ~/dotfiles/kitty;
     ".config/ohmyposh".source = ~/dotfiles/ohmyposh;
