@@ -46,13 +46,21 @@
     # '')
 
     pkgs.alejandra
+    pkgs.bat
     pkgs.cookiecutter
+    # pkgs.duf
+    # pkgs.eza
+    # pkgs.fd
+    # pkgs.fzf
+    # pkgs.go-task
     pkgs.kanata
     pkgs.nixd
+
     pkgs.ripgrep
     # pkgs.tmux
     pkgs.tldr
     pkgs.yazi
+    # pkgs.zoxide
   ];
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage

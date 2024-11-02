@@ -17,17 +17,30 @@
   }: let
     system = "x86_64-linux";
     pkgs = nixpkgs.legacyPackages.${system};
+    macsystem = "aarch64-darwin";
+    macpkgs = nixpkgs.legacyPackages.${macsystem};
   in {
-    homeConfigurations."honor" = home-manager.lib.homeManagerConfiguration {
-      inherit pkgs;
+    homeConfigurations = {
+      honor = home-manager.lib.homeManagerConfiguration {
+        inherit pkgs;
+        # Specify your home configuration modules here, for example,
+        # the path to your home.nix.
 
-      # Specify your home configuration modules here, for example,
-      # the path to your home.nix.
-      modules = [
-        ./home.nix
-        ./home/git.nix
-      ];
+        modules = [
+          ./home.nix
+          ./home/git.nix
+        ];
+      };
+      macpro = home-manager.lib.homeManagerConfiguration {
+        inherit macpkgs;
+        # Specify your home configuration modules here, for example,
+        # the path to your home.nix.
 
+        modules = [
+          ./home.nix
+          ./home/git.nix
+        ];
+      };
       # Optionally use extraSpecialArgs
       # to pass through arguments to home.nix
     };

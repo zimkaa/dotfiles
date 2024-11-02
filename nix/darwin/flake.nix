@@ -25,33 +25,32 @@
       nixpkgs.config.allowUnfree = true;
 
       environment.systemPackages = [
-        pkgs.vim
-        pkgs.neovim
-        pkgs.tmux
-        pkgs.kitty
+        # pkgs.vim
+        # pkgs.neovim
+        # pkgs.tmux
+        # pkgs.kitty
         pkgs.mkalias
-        pkgs.obsidian
-        pkgs.stow
-        pkgs.btop
-        pkgs.htop
+        # pkgs.obsidian
+        # pkgs.stow
+        # pkgs.btop
+        # pkgs.htop
         pkgs.pyenv
-        pkgs.fzf
-        pkgs.zoxide
-        pkgs.yazi
-        pkgs.eza
+        # pkgs.fzf
+        # pkgs.zoxide
+        # pkgs.yazi
+        # pkgs.eza
         pkgs.poetry
-        pkgs.oh-my-posh
-        pkgs.duf
-        pkgs.fd
-        pkgs.bat
-        pkgs.lazydocker
-        pkgs.dust
-        pkgs.lazygit
-        pkgs.ripgrep
-        pkgs.discord
-        pkgs.tldr
-        pkgs.devbox
-        pkgs.go-task
+        # pkgs.oh-my-posh
+        # pkgs.duf
+        # pkgs.fd
+        # pkgs.bat
+        # pkgs.lazydocker
+        # pkgs.dust
+        # pkgs.lazygit
+        # pkgs.ripgrep
+        # pkgs.discord
+        # pkgs.tldr
+        # pkgs.go-task
       ];
 
       fonts.packages = [
