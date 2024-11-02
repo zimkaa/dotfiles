@@ -1,0 +1,7 @@
+*.bak
+.DS_Store
+tmux/plugins/
+raycast
+fzf
+history.txt
+# .config/
