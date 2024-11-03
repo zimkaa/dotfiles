@@ -21,8 +21,8 @@
 
   nixpkgs.config.allowUnfreePredicate = pkg:
     builtins.elem (pkgs.lib.getName pkg) [
-      # "obsidian"
-      # "discord"
+      "obsidian"
+      "discord"
     ];
 
   # The home.packages option allows you to install Nix packages into your
