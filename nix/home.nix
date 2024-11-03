@@ -57,6 +57,7 @@
     pkgs.go-task
     pkgs.htop
     pkgs.kanata
+
     # pkgs.neovim
     pkgs.nixd
     pkgs.stow
@@ -67,7 +68,7 @@
     pkgs.tldr
     # pkgs.yazi
     pkgs.vim
-    # pkgs.zoxide
+    pkgs.zoxide
   ];
 
   # programs.tmux = {
