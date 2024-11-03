@@ -47,20 +47,26 @@
 
     pkgs.alejandra
     pkgs.bat
+    pkgs.btop
     pkgs.cookiecutter
     pkgs.duf
     pkgs.dust
-    # pkgs.eza
+    pkgs.eza
     # pkgs.fd
-    # pkgs.fzf
+    pkgs.fzf
     pkgs.go-task
+    pkgs.htop
     pkgs.kanata
+    # pkgs.neovim
     pkgs.nixd
-
+    pkgs.stow
+    # pkgs.obsidian
+    pkgs.oh-my-posh
     pkgs.ripgrep
     # pkgs.tmux
     pkgs.tldr
     # pkgs.yazi
+    pkgs.vim
     # pkgs.zoxide
   ];
 
@@ -70,7 +76,7 @@
   #   extraConfig = ''
   #     # Установка tmux plugin manager
   #     set -g @plugin 'tmux-plugins/tpm'
-      
+
   #     # Добавьте свои плагины здесь
   #     set -g @plugin 'tmux-plugins/tmux-sensible'
   #     set -g @plugin 'tmux-plugins/tmux-yank'
