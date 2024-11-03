@@ -48,20 +48,38 @@
     pkgs.alejandra
     pkgs.bat
     pkgs.cookiecutter
-    # pkgs.duf
+    pkgs.duf
+    pkgs.dust
     # pkgs.eza
     # pkgs.fd
     # pkgs.fzf
-    # pkgs.go-task
+    pkgs.go-task
     pkgs.kanata
     pkgs.nixd
 
     pkgs.ripgrep
     # pkgs.tmux
     pkgs.tldr
-    pkgs.yazi
+    # pkgs.yazi
     # pkgs.zoxide
   ];
+
+  # programs.tmux = {
+  #   enable = true;
+  #   # Дополнительная конфигурация
+  #   extraConfig = ''
+  #     # Установка tmux plugin manager
+  #     set -g @plugin 'tmux-plugins/tpm'
+      
+  #     # Добавьте свои плагины здесь
+  #     set -g @plugin 'tmux-plugins/tmux-sensible'
+  #     set -g @plugin 'tmux-plugins/tmux-yank'
+  #     set -g @plugin 'janoamaral/tokyo-night-tmux'
+
+  #     # Инициализация плагин менеджера
+  #     run '~/.tmux/plugins/tpm/tpm'
+  #   '';
+  # };
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
   # plain files is through 'home.file'.
