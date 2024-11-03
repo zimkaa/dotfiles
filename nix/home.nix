@@ -49,6 +49,7 @@
     pkgs.bat
     pkgs.btop
     pkgs.cookiecutter
+    # pkgs.discord
     pkgs.duf
     pkgs.dust
     pkgs.eza
@@ -57,7 +58,8 @@
     pkgs.go-task
     pkgs.htop
     pkgs.kanata
-
+    # pkgs.lazydocker
+    # pkgs.lazygit
     # pkgs.neovim
     pkgs.nixd
     pkgs.stow
@@ -66,7 +68,7 @@
     pkgs.ripgrep
     # pkgs.tmux
     pkgs.tldr
-    # pkgs.yazi
+    pkgs.yazi-unwrapped
     pkgs.vim
     pkgs.zoxide
   ];
