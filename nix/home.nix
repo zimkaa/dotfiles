@@ -104,13 +104,7 @@
     #   org.gradle.daemon.idletimeout=3600000
     # '';
 
-    # ".config/wezterm".source = ./.dotfiles/wezterm;
-    # ".config/ghostty".source = ./.dotfiles/ghostty;
-    # ".config/skhd".source = ./.dotfiles/skhd;
-    # ".config/starship".source = ./.dotfiles/starship;
-    # ".config/zellij".source = ./.dotfiles/zellij;
     # # My configuration
-    # ".zshrc".source = ../zshrc/.zshrc;
     # ".config/nvim".source = "${builtins.getEnv "HOME"}/dotfiles/nvim";
     ".zshrc".source = ../zshrc/.zshrc;
     ".vimrc".source = ../vimrc/.vimrc;
