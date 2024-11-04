@@ -18,6 +18,7 @@
     system = "x86_64-linux";
     pkgs = nixpkgs.legacyPackages.${system};
   in {
+    home-manager.backupFileExtension = "backup";
     homeConfigurations = {
       honor = home-manager.lib.homeManagerConfiguration {
         inherit pkgs;

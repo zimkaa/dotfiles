@@ -112,14 +112,13 @@
     # # My configuration
     # ".zshrc".source = ../zshrc/.zshrc;
     # ".config/nvim".source = "${builtins.getEnv "HOME"}/dotfiles/nvim";
-    ".zshrc".source = ~/dotfiles/zshrc/.zshrc;
-    ".vimrc".source = ~/dotfiles/vimrc/.vimrc;
-    # ".gitconfig".source = ~/dotfiles/.gitconfig;
-    ".config/nvim".source = ~/dotfiles/nvim;
-    ".config/kitty".source = ~/dotfiles/kitty;
-    ".config/ohmyposh".source = ~/dotfiles/ohmyposh;
-    ".config/nix".source = ~/dotfiles/nix;
-    ".config/tmux".source = ~/dotfiles/tmux;
+    ".zshrc".source = ../zshrc/.zshrc;
+    ".vimrc".source = ../vimrc/.vimrc;
+    ".config/nvim".source = ../nvim;
+    ".config/kitty".source = ../kitty;
+    ".config/ohmyposh".source = ../ohmyposh;
+    ".config/nix".source = ../nix;
+    ".config/tmux".source = ../tmux;
   };
 
   # Home Manager can also manage your environment variables through
