@@ -137,7 +137,6 @@ tmux split-window -h -t work:1.3
 tmux send-key -t work:2.1 'btop' enter
 tmux new-window -a -t work:2
 tmux attach -t work"
-# tmux send-key -t work:3.1 'cd PetProject/trading_bot/new_bot/' enter
 
 # node version manager
 export NVM_DIR="$HOME/.nvm"
