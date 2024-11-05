@@ -25,14 +25,15 @@ fi
 # Nix!
 export NIX_CONF_DIR=$HOME/.config/nix
 
- # Nix
- if [ -e '/nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh' ]; then
-	 . '/nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh'
- fi
- # End Nix
-
 # You may need to manually set your language environment
 export LANG=en_US.UTF-8
+export LC_ALL=en_US.UTF-8
+
+# Nix
+if [ -e '/nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh' ]; then
+  . '/nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh'
+fi
+# End Nix
 
 if [ -n "$TTY" ]; then
   export GPG_TTY=$(tty)
@@ -77,8 +78,6 @@ autoload -Uz compinit && compinit
 
 zinit cdreplay -q
 
-export LANG=en_US.UTF-8
-export LC_ALL=en_US.UTF-8
 
 # Keybindings
 bindkey -e
