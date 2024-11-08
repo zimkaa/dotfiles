@@ -27,7 +27,6 @@
 
         modules = [
           ./home.nix
-          ./home/git.nix
         ];
       };
       # Optionally use extraSpecialArgs
