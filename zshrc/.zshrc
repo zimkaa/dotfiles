@@ -153,7 +153,9 @@ export PYENV_ROOT="$HOME/.pyenv"
 PATH=~/.console-ninja/.bin:$PATH
 
 # Shell integrations
-eval "$(pyenv init -)"
+if [[ ! "$shell" == /nix/store/* ]]; then
+  eval "$(pyenv init -)"
+fi
 eval "$(fzf --zsh)"
 eval "$(zoxide init --cmd cd zsh)"
 eval "$(oh-my-posh init zsh --config $HOME/.config/ohmyposh/like_p10k.toml)"
