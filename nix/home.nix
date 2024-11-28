@@ -66,6 +66,7 @@
     # pkgs.obsidian
     pkgs.oh-my-posh
     pkgs.ripgrep
+    pkgs.rustup
     # pkgs.tmux
     pkgs.tldr
     pkgs.yazi-unwrapped
