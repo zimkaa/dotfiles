@@ -50,9 +50,9 @@ if [ ! -d "$ZINIT_HOME" ]; then
   git clone https://github.com/zdharma-continuum/zinit.git "$ZINIT_HOME"
 fi
 
-# dotenv settings
-ZSH_DOTENV_FILE=.dev.env
-ZSH_DOTENV_PROMPT=false
+if [ ! -d "$HOME/.cache/zinit/completions" ]; then
+  mkdir -p "$HOME/.cache/zinit/completions"
+fi
 
 # Source/Load zinit
 source "${ZINIT_HOME}/zinit.zsh"
@@ -78,6 +78,9 @@ autoload -Uz compinit && compinit
 
 zinit cdreplay -q
 
+# dotenv settings
+ZSH_DOTENV_FILE=.dev.env
+ZSH_DOTENV_PROMPT=false
 
 # Keybindings
 bindkey -e
