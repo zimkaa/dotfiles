@@ -22,6 +22,10 @@ if [[ "$(uname)" == "Linux" ]]; then
   export LOCALE_ARCHIVE=/usr/lib/locale/locale-archive
 fi
 
+# dotenv settings
+ZSH_DOTENV_FILE=.dev.env
+ZSH_DOTENV_PROMPT=false
+
 # Nix!
 export NIX_CONF_DIR=$HOME/.config/nix
 
@@ -78,9 +82,6 @@ autoload -Uz compinit && compinit
 
 zinit cdreplay -q
 
-# dotenv settings
-ZSH_DOTENV_FILE=.dev.env
-ZSH_DOTENV_PROMPT=false
 
 # Keybindings
 bindkey -e
