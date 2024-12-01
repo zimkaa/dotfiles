@@ -115,7 +115,7 @@ zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-preview 'eza --icons=always -1 --col
 # ---- Eza (better ls) -----
 alias ls="eza --icons=always"
 # alias ls="ls --color"
-alias la="ls -lAhg"
+alias la="ls -lAhg --sort oldest"
 # alias vim='nvim'
 alias c='clear'
 alias cat='bat'
