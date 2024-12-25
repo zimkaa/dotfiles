@@ -60,7 +60,7 @@
     pkgs.kanata
     # pkgs.lazydocker
     # pkgs.lazygit
-    # pkgs.neovim
+    pkgs.neovim
     pkgs.nixd
     pkgs.stow
     # pkgs.obsidian
