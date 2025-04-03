@@ -55,6 +55,7 @@
     pkgs.eza
     # pkgs.fd
     pkgs.fzf
+    pkgs.go
     pkgs.go-task
     pkgs.htop
     pkgs.kanata
@@ -62,15 +63,15 @@
     # pkgs.lazygit
     pkgs.neovim
     pkgs.nixd
-    pkgs.stow
     # pkgs.obsidian
     pkgs.oh-my-posh
     pkgs.ripgrep
     pkgs.rustup
-    # pkgs.tmux
+    pkgs.stow
     pkgs.tldr
-    pkgs.yazi-unwrapped
+    # pkgs.tmux
     pkgs.vim
+    pkgs.yazi-unwrapped
     pkgs.zoxide
   ];
 
