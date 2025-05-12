@@ -65,6 +65,7 @@
     pkgs.nixd
     # pkgs.obsidian
     pkgs.oh-my-posh
+    pkgs.poetry
     pkgs.ripgrep
     pkgs.rustup
     pkgs.stow
