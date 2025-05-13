@@ -112,6 +112,10 @@
     ".zshrc".source = ../zshrc/.zshrc;
     ".vimrc".source = ../vimrc/.vimrc;
     # ".config/nvim".source = ../nvim;
+    # ".config/nvim" = {
+    #   source = ./nvim;
+    #   recursive = true;
+    # };
     ".config/kitty".source = ../kitty;
     ".config/ohmyposh".source = ../ohmyposh;
     ".config/nix".source = ../nix;
