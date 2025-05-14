@@ -111,6 +111,7 @@
     # ".config/nvim".source = "${builtins.getEnv "HOME"}/dotfiles/nvim";
     ".zshrc".source = ../zshrc/.zshrc;
     ".vimrc".source = ../vimrc/.vimrc;
+    ".config/nvim".source = config.lib.file.mkOutOfStoreSymlink "/home/anton/dotfiles/nix/nvim";
     # ".config/nvim".source = ../nvim;
     # ".config/nvim" = {
     #   source = ./nvim;
